@@ -9,9 +9,35 @@ class ProductList extends Component {
     this.state = {};
   }
 
-  addToCart = (event) => {
-    event.preventDefault();
-    console.log("add item to cart");
+  addToCart = (e, product) => {
+    e.preventDefault();
+
+    let cartValue = localStorage.getItem('cart-data');
+    let currentCart = [];
+    if(cartValue) {
+      //get current cart items
+      currentCart = JSON.parse(cartValue);
+    }
+
+    //prevent the same item being added to cart quietly :p
+    let duplicate = false;
+    currentCart.forEach((item) => {
+      if(item.uuid === product.uuid) {
+        duplicate = true;
+        return;
+      }
+    })
+
+    if(!duplicate) {
+      currentCart.push(product);
+      localStorage.setItem('cart-data', JSON.stringify(currentCart));
+    }
+  }
+
+  gotoDetails(product) {
+    console.log("go to details");
+    console.log(product);
+    localStorage.setItem('current-product', JSON.stringify(product));
   }
 
   render() {
@@ -31,7 +57,7 @@ class ProductList extends Component {
               {products.map((product) => {
                 return (
                   <div className="col-12 col-md-6 col-xl-3 p-2" key={product.uuid}>
-                    <Link to="/productDetails">
+                    <Link onClick={() => this.gotoDetails(product)} to="/productDetails">
                       <div className="product" id={product.uuid} >
                         <div className="product-row">
                           <div className='product-name'>{product.name}</div>
@@ -43,7 +69,7 @@ class ProductList extends Component {
 
                         <div className="product-row">
                           <div className='product-price'>${product.price}</div>
-                          <button onClick={this.addToCart}>+ cart</button>
+                          <button onClick={(e) => this.addToCart(e, product)}>+ Cart</button>
                         </div>
                       </div>
                     </Link>

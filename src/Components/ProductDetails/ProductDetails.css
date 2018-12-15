@@ -1,0 +1,20 @@
+
+.ProductDetails .heading {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.ProductDetails img {
+  width: 80%;
+  height: 80%;
+}
+
+.ProductDetails .product-details .row {
+  text-align: center;
+}
+
+.ProductDetails .product-details button {
+  cursor: pointer;
+  min-width: 120px;
+  margin: 0px 10px;
+}

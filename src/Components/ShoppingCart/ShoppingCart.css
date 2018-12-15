@@ -1,0 +1,38 @@
+
+.ShoppingCart .heading {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.ShoppingCart .table-heading {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.ShoppingCart .product-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ShoppingCart .item-list {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin-bottom: 16px;
+}
+
+.ShoppingCart .remove {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.ShoppingCart .total {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  margin-top: 16px;
+}
+
+.ShoppingCart .sub-total,
+.ShoppingCart .discount,
+.ShoppingCart .total {
+  font-weight: 600;
+}

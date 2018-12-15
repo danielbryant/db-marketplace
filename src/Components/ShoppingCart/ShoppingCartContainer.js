@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import ShoppingCart from './ShoppingCart'
 
+import './ShoppingCart.css';
+
 class ShoppingCartCotainer extends Component {
 
   render() {
