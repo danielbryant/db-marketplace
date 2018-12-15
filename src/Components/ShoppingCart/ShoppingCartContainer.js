@@ -4,10 +4,6 @@ import ShoppingCart from './ShoppingCart'
 
 class ShoppingCartCotainer extends Component {
 
-  componentDidMount() {
-    console.log('shopping cart conatiner did mount');
-  }
-
   render() {
     return (
       <div className='ShoppingCartContainer'>

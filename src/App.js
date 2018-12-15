@@ -3,6 +3,7 @@ import { Route, Switch, Link } from 'react-router-dom';
 
 import ProductListContainer from './Components/ProductList/ProductListContainer';
 import ShoppingCartCotainer from './Components/ShoppingCart/ShoppingCartContainer';
+import ProductDetailsCotainer from './Components/ProductDetails/ProductDetailsContainer';
 
 import './App.css';
 
@@ -23,6 +24,7 @@ class App extends Component {
               <Route exact path='/' component={ProductListContainer} />
               <Route path='/products' component={ProductListContainer} />
               <Route path='/cart' component={ShoppingCartCotainer} />
+              <Route path='/productDetails' component={ProductDetailsCotainer} />
             </Switch>
 
           </div>

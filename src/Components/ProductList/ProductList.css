@@ -1,0 +1,17 @@
+.ProductList .product {
+  cursor: pointer;
+  border: 1px solid gray;
+  margin-bottom: 16px;
+  padding-top: 16px;
+}
+
+.ProductList .product .product-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 16px;
+}
+
+.ProductList .product img {
+  width: 80%;
+  height: 80%;
+}

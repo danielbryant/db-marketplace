@@ -1,0 +1,26 @@
+[
+    {
+      "uuid": 1411,
+      "name": "Jockey Wheels - Orange",
+      "price": "15.39",
+      "details": "Additional Information - This product comes with the quick brown fox that jumped over that lazy dog."
+    },
+    {
+      "uuid": 23881,
+      "name": "Chain Ring 146mm",
+      "price": "65.95",
+      "details": "Additional Information"
+    },
+    {
+      "uuid": 13008,
+      "name": "Carbon Brake Pads",
+      "price": "92.00",
+      "details": "Additional Information"
+    },
+    {
+      "uuid": 9101,
+      "name": "Front Derailleur - 34.9mm",
+      "price": "31.22",
+      "details": "Additional Information"
+    }
+  ]

@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class ShoppingCart extends Component {
+class ProductDetails extends Component {
 
   render() {
     return (
-      <div className='ShoppingCart'>
+      <div className='ProductDetails'>
         <div className="container">
           <div className="row">
             <div className="col-12">
               <span>
                 <Link to='/products'>
-                  &lt;&#45; back to products
+                  &lt;&#45; back
                 </Link>
               </span>
-              <h4>Shopping Cart</h4>
+              <h4>Product Details</h4>
             </div>
           </div>
         </div>
@@ -24,4 +24,4 @@ class ShoppingCart extends Component {
 
 }
 
-export default ShoppingCart;
+export default ProductDetails;

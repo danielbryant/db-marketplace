@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 
 import ProductList from './ProductList'
 
-class ProductListCotainer extends Component {
+import './ProductList.css';
 
-  componentDidMount() {
-    console.log('product list conatiner did mount');
-  }
+const products = require('./products.json');
+
+class ProductListCotainer extends Component {
 
   render() {
     return (
       <div className='ProductListContainer'>
-        <ProductList></ProductList>
+        <ProductList products={products}></ProductList>
       </div>
     )
   }
