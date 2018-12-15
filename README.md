@@ -1,10 +1,18 @@
 ## DB Marketplace
 
-To run the project
+I was going to add Redux for managing shopping cart state but I probably spent too much time on some other minor details. I ended up just storing the cart data in local storage ><
+
+I guess that could be part of the pairing exercise.
+
+I was styling for mobile first. It still looks alright on a desktop but I would have improved the look for larger break points if I was to spend more time on it.
+
+
+To run the project:
 
 ### `npm install`
 
 ### `npm start`
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
