@@ -40,6 +40,20 @@ class ProductDetails extends Component {
     if(!duplicate) {
       currentCart.push(product);
       localStorage.setItem('cart-data', JSON.stringify(currentCart));
+      //item added - set toast
+      const successToast = document.getElementById('success-toast');
+      successToast.className = "show";
+      setTimeout(() => {
+        successToast.removeAttribute('class', "show");
+      }, 3000);
+    }
+    else {
+      //show not added toast
+      const duplicateToast = document.getElementById('duplicate-toast');
+      duplicateToast.className = "show";
+      setTimeout(() => {
+        duplicateToast.removeAttribute('class', "show");
+      }, 3000);
     }
   }
 
@@ -97,6 +111,10 @@ class ProductDetails extends Component {
             </div>
           </div>
         </div>
+
+        <div id="success-toast" className="success-toast">Item added to cart.</div>
+        <div id="duplicate-toast" className="duplicate-toast">Item already added to cart - one is enough.</div>
+
       </div>
     )
   }
