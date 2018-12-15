@@ -49,8 +49,6 @@ class ProductList extends Component {
   }
 
   gotoDetails(product) {
-    console.log("go to details");
-    console.log(product);
     localStorage.setItem('current-product', JSON.stringify(product));
   }
 
